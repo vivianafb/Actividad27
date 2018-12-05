@@ -37,6 +37,8 @@ class CategoriesController < ApplicationController
     end
   end
 
+
+
   # PATCH/PUT /categories/1
   # PATCH/PUT /categories/1.json
   def update
@@ -71,4 +73,5 @@ class CategoriesController < ApplicationController
     def category_params
       params.require(:category).permit(:name)
     end
+   
 end

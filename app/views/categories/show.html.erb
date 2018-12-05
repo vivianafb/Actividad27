@@ -3,11 +3,12 @@
 <h1> Categoría: <%= @category.name %> </h1>
 
 <h2> Productos: </h2>
-
-
+<ul>
   <% @category.products.each do|product| %>
     <li>
       <%= product.name %> 
+      <%= product.price %> 
+      
       <%= link_to "x",category_product_path(@category, product),
         method: :delete %>
      </li>
